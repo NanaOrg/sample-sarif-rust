@@ -9,7 +9,6 @@
           "rules": [
             {
               "id": "VulnerableComponent",
-              "name": "Vulnerable Component",
               "shortDescription": {
                 "text": "Using components with known vulnerabilities"
               },
@@ -51,12 +50,42 @@
                   "startLine": 10,
                   "startColumn": 1,
                   "endLine": 14,
-                  "endColumn": 20
+                  "endColumn": 20,
+                  "message": {
+                    "text": "Sample description for vulnerable package hyper",
+                    "markdown": "Sample description for vulnerable package hyper"
+                  }
                 }
               }
             }
           ]
-        }
+        },
+        {
+            "ruleId": "VulnerableComponent",
+            "message": {
+              "text": "idna@1.2.3 is affected by vulnerability CVE-2020-35863"
+            },
+            "level": "error",
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Cargo.lock"
+                  },
+                  "region": {
+                    "startLine": 17,
+                    "startColumn": 1,
+                    "endLine": 21,
+                    "endColumn": 20,
+                    "message": {
+                        "text": "Sample description for vulnerable package idna",
+                        "markdown": "Sample description for vulnerable package idna"
+                    }
+                  }
+                }
+              }
+            ]
+          }
       ]
     }
   ]

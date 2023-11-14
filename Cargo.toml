@@ -4,3 +4,4 @@ version = "1.0.0"
 
 [dependencies]
 hyper = "=0.10.16"
+idna = "=1.2.3"
