@@ -39,7 +39,6 @@
           "message": {
             "text": "hyper@0.10.16 is affected by vulnerability CVE-2020-35863"
           },
-          "level": "error",
           "locations": [
             {
               "physicalLocation": {
@@ -49,7 +48,7 @@
                 "region": {
                   "startLine": 10,
                   "startColumn": 1,
-                  "endLine": 14,
+                  "endLine": 15,
                   "endColumn": 20,
                   "message": {
                     "text": "Sample description for vulnerable package hyper",
@@ -58,6 +57,32 @@
                 }
               }
             }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "Sample description for vulnerable package hyper",
+                "markdown": "Sample description for vulnerable package hyper"
+              }, 
+              "artifactChanges": [{
+                "artifactLocation": {
+                  "uri": "Cargo.lock"
+                },
+                "replacements": [
+                  {
+                    "deletedRegion": {
+                      "startLine": 13,
+                      "startColumn": 12,
+                      "endLine": 13,
+                      "endColumn": 19
+                    },
+                    "insertedContent": {
+                      "text": "0.11.1"
+                    }
+                  }
+                ]
+              }]
+            }
           ]
         },
         {
@@ -65,7 +90,6 @@
             "message": {
               "text": "idna@1.2.3 is affected by vulnerability CVE-2020-35863"
             },
-            "level": "error",
             "locations": [
               {
                 "physicalLocation": {
