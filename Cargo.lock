@@ -1,0 +1,14 @@
+version = 3
+
+[[package]]
+name = "sample"
+version = "1.0.0"
+dependencies = [
+    "hyper"
+]
+
+[[package]]
+name = "hyper"
+version = "0.10.16"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1b9bf6"
